@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Charset / Viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- (SEO) Title / Author / Description / Keywords / Copyright -->
+    <title> {{ title }}</title>
+    <meta name="author" content="Mathias Camus">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="copyright" content="">
+
+    <!-- Canonical / Alternate -->
+    <link rel="canonical" href="">
+    <!-- <link rel="alternate" type="application/rss+xml" title="Prodity Home" href=""> -->
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/ico" href="/assets/img/favicon/favicon.png" />
+    <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png" />
+    <link rel="icon" href="/assets/img/favicon/android-favicon.png">
+
+    <!-- Css start -->
+    <!-- Font Awesome css -->
+    <script src="https://kit.fontawesome.com/fe64908270.js" crossorigin="anonymous"></script>
+    <!-- Swiper.js css -->
+    <!-- Google Fonts css -->
+    <link rel="stylesheet" href="{{ style }}">
+    <!-- Css End -->
+</head>
+<body>
+    <div class="background-container">
+        {{ content | safe }}
+        <footer>
+            <div class="text">
+                <p>&copy; 2020 Prodity. All rights reserved!</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
+    <script src="{{ appjs }}" type="module"></script>
+</body>
+</html>
